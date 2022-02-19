@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@400;500;700&family=Montserrat:wght@400;500&display=swap");
+
+:root {
+  font-size: 10px;
+  color: white;
+  background: #181719;
+  /* */
+  font-family: "Montserrat", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.logo {
+  padding: 1rem;
+  font-family: "Crimson Pro", serif;
+  border: 0.1rem solid white;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 10.3rem;
+  text-align: center;
+}
+.container {
+  padding: 1rem;
+}
+
+.container > header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: #181719;
+  padding: 1rem;
+  display: none;
+}
+
+#closer {
+  text-align: right;
+  font-size: 2rem;
+  cursor: pointer;
+  padding-right: 2rem;
+}
+
+.nav-list {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.highlighted {
+  border-bottom: 0.2rem solid white;
+  font-weight: 700;
+
+}
+.nav-list p {
+  font-size: 1.8rem;
+  padding-bottom: 0.6rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+#menu {
+  cursor: pointer;
+}
+
+/* Main */
+main {
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.container > footer {
+  text-align: center;
+  margin-top: 6.1rem;
+  font-size: 1.4rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Lora", serif;
+  font-size: 3.6rem;
+  font-weight: 500;
+  line-height: 4.6rem;
+}
+
+.info {
+  margin: 2.5rem 0;
+  max-width: 25rem;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+}
+
+section > img {
+  width: 100%;
+  position: relative;
+}
+
+article {
+  background-color: #181719;
+  width: 30rem;
+  padding: 1.2rem;
+  margin-right: 3rem;
+  position: relative;
+  bottom: 6rem;
+  float: right;
+}
+
+article img {
+  border-radius: 50%;
+  width: 5rem;
+}
+
+article header {
+  display: flex;
+  align-items: center;
+}
+
+article header div {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+article header div > p:first-of-type {
+  font-size: 1.2rem;
+}
+
+article header div > p:last-of-type {
+  color: #828282;
+}
+
+h3 {
+  font-family: "Lora", serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.3rem;
+  padding: 1rem;
+  max-width: 21rem;
+}
+
+.container > footer span {
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    flex-direction: row;
+    margin-top: 14.5rem;
+    /* align-items: center; */
+  }
+  #menu, #closer {
+    display: none;
+  }
+  nav {
+    height: fit-content;
+    width: inherit;
+    position: relative;
+    background-color: #181719;
+    padding: 1rem;
+    display: flex;
+  }
+  .nav-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 8.6rem;
+  }
+  .nav-list p {
+    font-size: 1.8rem;
+    margin-top: 0;
+    padding-bottom: 0.6rem;
+    cursor: pointer;
+  }
+  .info {
+    min-width: 30rem;
+    width: 41rem;
+    margin: 4rem 0;
+  }
+  main >section:first-of-type {
+    margin-top: 10rem;
+  }
+}
